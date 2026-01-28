@@ -20,9 +20,8 @@ let package = Package(
         .package(url: "https://github.com/swiftlang/swift-docc-plugin", from: "1.4.5")
     ],
     targets: [
-        .target(
-            name: "Logboard",
-            dependencies: [],
-            )
+        targets: [
+            .target(name: "Logboard", dependencies: []),
+        ]
     ]
 )
